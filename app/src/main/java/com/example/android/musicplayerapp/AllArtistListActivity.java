@@ -19,7 +19,7 @@ import java.util.ArrayList;
  * Created by Bruno André on 04/04/2018.
  */
 
-public class AllAlbumListActivity extends AppCompatActivity implements ListView.OnItemClickListener {
+public class AllArtistListActivity extends AppCompatActivity implements ListView.OnItemClickListener {
 
 
     @Override
@@ -49,13 +49,13 @@ public class AllAlbumListActivity extends AppCompatActivity implements ListView.
 
                         switch (item.getItemId()) {
                             case R.id.action_home:
-                                Intent intent1 = new Intent(AllAlbumListActivity.this, MainActivity.class);
+                                Intent intent1 = new Intent(AllArtistListActivity.this, MainActivity.class);
                                 startActivity(intent1);
                                 break;
 
 
                             case R.id.action_song:
-                                Intent intent3 = new Intent(AllAlbumListActivity.this, AllSongListActivity.class);
+                                Intent intent3 = new Intent(AllArtistListActivity.this, AllSongListActivity.class);
                                 startActivity(intent3);
                                 break;
                         }
@@ -78,28 +78,28 @@ public class AllAlbumListActivity extends AppCompatActivity implements ListView.
      */
     public void createFullAlbumList() {
 
-        ArrayList<AllAlbum> allAlbums = new ArrayList<AllAlbum>();
+        ArrayList<AllArtist> allArtists = new ArrayList<AllArtist>();
 
         //Musopen
-        allAlbums.add(new AllAlbum("Scott Joplin", "Maple Leaf Rag"));
-        allAlbums.add(new AllAlbum("Franz Liszt", "Hungarian Rhapsody"));
-        allAlbums.add(new AllAlbum("Korsakov", "Flight of the Bumblebee"));
-        allAlbums.add(new AllAlbum("Mozart", "Eine Kleine Nachtmusik"));
-        allAlbums.add(new AllAlbum("Tchaikovsky", "Dance of the sugar plum fairy"));
+        allArtists.add(new AllArtist("Scott Joplin", "Maple Leaf Rag"));
+        allArtists.add(new AllArtist("Franz Liszt", "Hungarian Rhapsody"));
+        allArtists.add(new AllArtist("Korsakov", "Flight of the Bumblebee"));
+        allArtists.add(new AllArtist("Mozart", "Eine Kleine Nachtmusik"));
+        allArtists.add(new AllArtist("Tchaikovsky", "Dance of the sugar plum fairy"));
 
         //Youtube
-        allAlbums.add(new AllAlbum("Bach", "Toccata in D Minor"));
-        allAlbums.add(new AllAlbum("Beethoven", "Symphony No 5"));
-        allAlbums.add(new AllAlbum("Handel", "Aleluia Messiah"));
-        allAlbums.add(new AllAlbum("Kevin MacLeod", "If I Had a Chicken"));
-        allAlbums.add(new AllAlbum("Scott Joplin", "The Entertainer"));
+        allArtists.add(new AllArtist("Bach", "Toccata in D Minor"));
+        allArtists.add(new AllArtist("Beethoven", "Symphony No 5"));
+        allArtists.add(new AllArtist("Handel", "Aleluia Messiah"));
+        allArtists.add(new AllArtist("Kevin MacLeod", "If I Had a Chicken"));
+        allArtists.add(new AllArtist("Scott Joplin", "The Entertainer"));
 
         //Bensound
-        allAlbums.add(new AllAlbum("Bensound", "Buddy"));
-        allAlbums.add(new AllAlbum("Bensound", "Cute"));
-        allAlbums.add(new AllAlbum("Bensound", "Happiness"));
-        allAlbums.add(new AllAlbum("Bensound", "Sunny"));
-        allAlbums.add(new AllAlbum("Bensound", "Ukulele"));
+        allArtists.add(new AllArtist("Bensound", "Buddy"));
+        allArtists.add(new AllArtist("Bensound", "Cute"));
+        allArtists.add(new AllArtist("Bensound", "Happiness"));
+        allArtists.add(new AllArtist("Bensound", "Sunny"));
+        allArtists.add(new AllArtist("Bensound", "Ukulele"));
 
 
 
@@ -110,7 +110,7 @@ public class AllAlbumListActivity extends AppCompatActivity implements ListView.
 
 
         // Create AllSongAdapter object to display listview
-        AllAlbumAdapter adapter = new AllAlbumAdapter(this, allAlbums);
+        AllArtistAdapter adapter = new AllArtistAdapter(this, allArtists);
         listView.setAdapter(adapter);
 
         // Set OnClickListener on ListView to identify the item on ListView clicked by user

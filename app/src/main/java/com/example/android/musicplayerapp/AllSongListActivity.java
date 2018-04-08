@@ -52,8 +52,8 @@ public class AllSongListActivity extends AppCompatActivity implements ListView.O
                                 break;
 
 
-                            case R.id.action_album:
-                                Intent intent3 = new Intent(AllSongListActivity.this, AllAlbumListActivity.class);
+                            case R.id.action_artist:
+                                Intent intent3 = new Intent(AllSongListActivity.this, AllArtistListActivity.class);
                                 startActivity(intent3);
                                 break;
                         }

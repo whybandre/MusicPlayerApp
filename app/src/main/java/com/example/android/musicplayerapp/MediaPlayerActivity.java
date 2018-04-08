@@ -81,8 +81,8 @@ public class MediaPlayerActivity extends AppCompatActivity implements Runnable,
                                 startActivity(intent1);
                                 break;
 
-                            case R.id.action_album:
-                                Intent intent2 = new Intent(MediaPlayerActivity.this, AllAlbumListActivity.class);
+                            case R.id.action_artist:
+                                Intent intent2 = new Intent(MediaPlayerActivity.this, AllArtistListActivity.class);
                                 startActivity(intent2);
                                 break;
 

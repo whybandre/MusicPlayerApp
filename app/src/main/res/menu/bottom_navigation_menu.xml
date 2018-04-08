@@ -9,10 +9,10 @@
         android:title="HOME"
          />
     <item
-        android:id="@+id/action_album"
+        android:id="@+id/action_artist"
         android:enabled="true"
         android:icon="@drawable/ic_library_music_black_48dp"
-        android:title="ALBUM"
+        android:title="ARTIST"
          />
     <item
         android:id="@+id/action_song"

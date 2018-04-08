@@ -4,13 +4,13 @@ package com.example.android.musicplayerapp;
  * Created by Bruno André on 04/04/2018.
  */
 
-public class AllAlbum {
+public class AllArtist {
 
         private String  mSinger;
         private String mSong;
 
     // Default constructor
-    public AllAlbum(String singer, String song) {
+    public AllArtist(String singer, String song) {
         mSinger = singer;
         mSong = song;
     }

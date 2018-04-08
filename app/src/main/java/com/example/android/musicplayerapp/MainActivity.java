@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity implements ListView.OnItemCl
 
                         switch (item.getItemId()) {
 
-                            case R.id.action_album:
-                                Intent intent2 = new Intent(MainActivity.this, AllAlbumListActivity.class);
+                            case R.id.action_artist:
+                                Intent intent2 = new Intent(MainActivity.this, AllArtistListActivity.class);
                                 startActivity(intent2);
                                 break;
 

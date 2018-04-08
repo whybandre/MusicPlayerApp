@@ -15,11 +15,11 @@ import java.util.ArrayList;
  * Created by Bruno André on 04/04/2018.
  */
 
-public class AllAlbumAdapter extends ArrayAdapter<AllAlbum> {
+public class AllArtistAdapter extends ArrayAdapter<AllArtist> {
 
     private Context mContext;
 
-    public AllAlbumAdapter(Activity context, ArrayList<AllAlbum> song) {
+    public AllArtistAdapter(Activity context, ArrayList<AllArtist> song) {
         super(context, 0, song);
         mContext = context;
     }
@@ -33,7 +33,7 @@ public class AllAlbumAdapter extends ArrayAdapter<AllAlbum> {
                     R.layout.album_item, parent, false);
         }
 
-        AllAlbum currentSong = getItem(position);
+        AllArtist currentSong = getItem(position);
         TextView textSong = (TextView) listItemView.findViewById(R.id.text_song);
         textSong.setText(currentSong.getSong());
 

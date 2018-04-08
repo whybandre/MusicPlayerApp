@@ -57,8 +57,8 @@ public class CategorySongListActivity extends AppCompatActivity implements ListV
                                 startActivity(intent1);
                                 break;
 
-                            case R.id.action_album:
-                                Intent intent2 = new Intent(CategorySongListActivity.this, AllAlbumListActivity.class);
+                            case R.id.action_artist:
+                                Intent intent2 = new Intent(CategorySongListActivity.this, AllArtistListActivity.class);
                                 startActivity(intent2);
                                 break;
 
