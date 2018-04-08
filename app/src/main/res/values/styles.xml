@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ActionBarTheme" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:actionBarItemBackground">@color/colorPrimaryDark</item>
+    </style>
+
+
+
+    <style name="TextSong">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/main_text</item>
+    </style>
+
+    <style name="TextMediaPlayerTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dimen_10dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_10dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_20dp</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/main_text</item>
+    </style>
+
+    <style name="TextMediaPlayerSubTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dimen_10dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_10dp</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textColor">@color/main_text</item>
+    </style>
+
+
+    <style name="MediaButtons">
+        <item name="android:layout_width">@dimen/dimen_40dp</item>
+        <item name="android:layout_height">@dimen/dimen_40dp</item>
+        <item name="android:alpha">0.6</item>
+    </style>
+
+    <style name="SeekBarMediaPlayer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_20dp</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">0</item>
+        <item name="android:secondaryProgress">0</item>
+    </style>
+
+    <style name="TimeLabelRight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/dimen_40dp</item>
+    </style>
+
+    <style name="TimeLabelLeft">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_40dp</item>
+    </style>
+
+
+    <style name="TextCardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/image_playlist_category</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+
+    <style name="PictureArtist">
+        <item name="android:layout_width">@dimen/picture_width</item>
+        <item name="android:layout_height">@dimen/picture_width</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_10dp</item>
+    </style>
+
+
+    <style name="BottomNavigationViewMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/card_layout_height</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+
+
+</resources>
+

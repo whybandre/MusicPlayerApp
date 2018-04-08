@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Music Player App</string>
+
+
+    <!--- Activities Name-->
+    <string name="title_main_activity">Library</string>
+    <string name="title_category_song_activity">Category Library</string>
+    <string name="title_all_song_activity">Songs Library</string>
+    <string name="title_all_album_activity">Album Library</string>
+    <string name="title_media_player_activity">Now Playing</string>
+
+
+    <!--- All Song Categories -->
+    <string name="song_category_musopen">musopen</string>
+    <string name="song_category_youtube">youtube</string>
+    <string name="song_category_bensound">bensound</string>
+
+
+    <!--- Library Category -->
+    <string name="library_category_musopen">MUSOPEN</string>
+    <string name="library_category_youtube">YOUTUBE</string>
+    <string name="library_category_bensound">BENSOUND</string>
+
+    <!--- Library Category -->
+    <string name="time_label_begin">0:00</string>
+    <string name="time_label_end">-0:00</string>
+
+
+
+</resources>
