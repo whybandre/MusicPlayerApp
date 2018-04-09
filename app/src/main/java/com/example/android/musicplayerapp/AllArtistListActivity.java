@@ -41,7 +41,6 @@ public class AllArtistListActivity extends AppCompatActivity implements ListView
         menuItem.setChecked(true);
 
 
-
         bottomNavigationView.setOnNavigationItemSelectedListener
                 (new BottomNavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -65,8 +64,6 @@ public class AllArtistListActivity extends AppCompatActivity implements ListView
                 });
 
 //End---------->Bottom Navigation Bar with Activities<-------------
-
-
 
 
         // Display full list of songs
@@ -102,11 +99,8 @@ public class AllArtistListActivity extends AppCompatActivity implements ListView
         allArtists.add(new AllArtist("Bensound", "Ukulele"));
 
 
-
-
         ListView listView = (ListView) findViewById(R.id.list_albums);
         listView.setBackgroundColor(getResources().getColor(R.color.home_background));
-
 
 
         // Create AllSongAdapter object to display listview
@@ -119,9 +113,9 @@ public class AllArtistListActivity extends AppCompatActivity implements ListView
     }
 
 
-
     /**
      * Method to identify ListView item clicked and launch MediaPlayerActivity
+     *
      * @param adapterView
      * @param view
      * @param position

@@ -21,28 +21,24 @@
             android:name=".CategorySongListActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/title_category_song_activity"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
 
         <activity
             android:name=".AllSongListActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/title_all_song_activity"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
 
         <activity
             android:name=".AllArtistListActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/title_all_album_activity"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
 
         <activity
             android:name=".MediaPlayerActivity"
             android:configChanges="orientation|screenSize"
-            android:label="@string/title_media_player_activity">
-        </activity>
+            android:label="@string/title_media_player_activity"></activity>
 
     </application>
 

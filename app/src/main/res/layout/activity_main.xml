@@ -1,28 +1,25 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/home_background"
     android:orientation="vertical"
-    tools:context="com.example.android.musicplayerapp.MainActivity"
-    >
+    tools:context="com.example.android.musicplayerapp.MainActivity">
 
-    <ListView
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list_playlist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/list_playlist"
         android:clickable="true"
-        android:focusable="true"/>
+        android:focusable="true" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         style="@style/BottomNavigationViewMenu"
-        app:menu="@menu/bottom_navigation_menu"
-        app:elevation="@dimen/nav_card_elevation"/>
+        app:elevation="@dimen/nav_card_elevation"
+        app:menu="@menu/bottom_navigation_menu" />
 
 </RelativeLayout>

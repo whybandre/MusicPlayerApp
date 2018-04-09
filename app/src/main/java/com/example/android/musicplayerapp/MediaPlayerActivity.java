@@ -7,8 +7,8 @@ package com.example.android.musicplayerapp;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.os.Handler;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -45,10 +45,27 @@ public class MediaPlayerActivity extends AppCompatActivity implements Runnable,
     private String mSinger;
     private String mSongResource;
     private String mPictureResource;
+    private Handler handler = new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(Message msg) {
+            int currentPosition = msg.what;
+            // Update positionBar.
+            mSeekBar.setProgress(currentPosition);
+
+            // Update Labels.
+            String elapsedTime = createTimeLabel(currentPosition);
+            elapsedTimeLabel.setText(elapsedTime);
+
+            String remainingTime = createTimeLabel(totalTime - currentPosition);
+            remainingTimeLabel.setText("- " + remainingTime);
+
+            return true;
+        }
+    });
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String [] intentMsgArray = new String[3];
+        String[] intentMsgArray = new String[3];
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_media_player);
@@ -99,7 +116,6 @@ public class MediaPlayerActivity extends AppCompatActivity implements Runnable,
 //End---------->Bottom Navigation Bar with Activities<-------------
 
 
-
         Bundle bundle = getIntent().getExtras();
         mIntentMessage = bundle.getString("message");
 
@@ -138,12 +154,13 @@ public class MediaPlayerActivity extends AppCompatActivity implements Runnable,
 
 
     }
+
     /**
      * This method gets activity_category_song_list resource name of the activity_category_song_list selected
      */
     public void getSongResource() {
 
-        mSongResource = mSinger.replace("'", "").toLowerCase()+ "_";
+        mSongResource = mSinger.replace("'", "").toLowerCase() + "_";
         mSongResource += mSong.replace("'", "").toLowerCase();
         mSongResource = mSongResource.replaceAll(" ", "_");
     }
@@ -153,11 +170,10 @@ public class MediaPlayerActivity extends AppCompatActivity implements Runnable,
      */
     public void getPictureResource() {
 
-            mPictureResource = "picture__";
-            mPictureResource += mSinger.replace("'", "").toLowerCase();
-            mPictureResource = mPictureResource.replaceAll(" ", "_");
-        }
-
+        mPictureResource = "picture__";
+        mPictureResource += mSinger.replace("'", "").toLowerCase();
+        mPictureResource = mPictureResource.replaceAll(" ", "_");
+    }
 
     /**
      * This method displays Media details - activity_category_song_list title, singer name, picture
@@ -190,24 +206,6 @@ public class MediaPlayerActivity extends AppCompatActivity implements Runnable,
         }
     }
 
-    private Handler handler = new Handler(new Handler.Callback() {
-        @Override
-        public boolean handleMessage(Message msg) {
-            int currentPosition = msg.what;
-            // Update positionBar.
-            mSeekBar.setProgress(currentPosition);
-
-            // Update Labels.
-            String elapsedTime = createTimeLabel(currentPosition);
-            elapsedTimeLabel.setText(elapsedTime);
-
-            String remainingTime = createTimeLabel(totalTime-currentPosition);
-            remainingTimeLabel.setText("- " + remainingTime);
-
-            return true;
-        }
-    });
-
     public String createTimeLabel(int time) {
         String timeLabel = "";
         int min = time / 1000 / 60;
@@ -219,7 +217,6 @@ public class MediaPlayerActivity extends AppCompatActivity implements Runnable,
 
         return timeLabel;
     }
-
 
 
     /**
@@ -262,12 +259,27 @@ public class MediaPlayerActivity extends AppCompatActivity implements Runnable,
             }
         }
 
-}
+    }
 
+    /**
+     * This method stop music when user goes to another activity
+     *
+     */
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (this.isFinishing()){
+            mMediaPlayer.stop();
+        }
+    }
 
-
-
-
+    /**
+     * If we wanted to also stop the music if the user goes out of the app
+     public void onUserLeaveHint() {
+     player.stop();
+     super.onUserLeaveHint();
+     }
+     */
 
 
     public void onProgressChanged(SeekBar seekBar, int progress,

@@ -2,7 +2,6 @@ package com.example.android.musicplayerapp;
 
 import android.app.Activity;
 import android.content.Context;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,12 +25,11 @@ public class CategorySongAdapter extends ArrayAdapter<CategorySong> {
     }
 
 
-
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.category_item, parent, false);
         }
@@ -47,7 +45,6 @@ public class CategorySongAdapter extends ArrayAdapter<CategorySong> {
         //Define an Icon color
         ImageView imageViewIcon = (ImageView) listItemView.findViewById(R.id.image_playlist_category);
         imageViewIcon.setColorFilter(getContext().getResources().getColor(R.color.White));
-
 
 
         //Define a Random color

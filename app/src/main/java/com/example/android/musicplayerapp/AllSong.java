@@ -6,7 +6,7 @@ package com.example.android.musicplayerapp;
 
 public class AllSong {
     private String mSong;
-    private String  mSinger;
+    private String mSinger;
 
     // Default constructor
     public AllSong(String song, String singer) {
@@ -16,6 +16,7 @@ public class AllSong {
 
     /**
      * This method gets activity_category_song_list name
+     *
      * @return activity_category_song_list
      */
     public String getSong() {
@@ -24,6 +25,7 @@ public class AllSong {
 
     /**
      * This method gets singer name
+     *
      * @return singer
      */
     public String getSinger() {

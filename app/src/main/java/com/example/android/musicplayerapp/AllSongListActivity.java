@@ -76,21 +76,21 @@ public class AllSongListActivity extends AppCompatActivity implements ListView.O
 
         ArrayList<AllSong> allSongs = new ArrayList<AllSong>();
 
-            //Musopen
+        //Musopen
         allSongs.add(new AllSong("Maple Leaf Rag", "Scott Joplin"));
         allSongs.add(new AllSong("Hungarian Rhapsody", "Franz Liszt"));
         allSongs.add(new AllSong("Flight of the Bumblebee", "Korsakov"));
         allSongs.add(new AllSong("Eine Kleine Nachtmusik", "Mozart"));
         allSongs.add(new AllSong("Dance of the sugar plum fairy", "Tchaikovsky"));
 
-            //Youtube
+        //Youtube
         allSongs.add(new AllSong("Toccata in D Minor", "Bach"));
         allSongs.add(new AllSong("Symphony No 5", "Beethoven"));
         allSongs.add(new AllSong("Aleluia Messiah", "Handel"));
         allSongs.add(new AllSong("If I Had a Chicken", "Kevin MacLeod"));
         allSongs.add(new AllSong("The Entertainer", "Scott Joplin"));
 
-            //Bensound
+        //Bensound
         allSongs.add(new AllSong("Buddy", "Bensound"));
         allSongs.add(new AllSong("Cute", "Bensound"));
         allSongs.add(new AllSong("Happiness", "Bensound"));
@@ -111,9 +111,9 @@ public class AllSongListActivity extends AppCompatActivity implements ListView.O
     }
 
 
-
     /**
      * Method to identify ListView item clicked and launch MediaPlayerActivity
+     *
      * @param adapterView
      * @param view
      * @param position

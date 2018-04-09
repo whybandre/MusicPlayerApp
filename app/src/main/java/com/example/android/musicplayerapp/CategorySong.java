@@ -16,6 +16,7 @@ public class CategorySong {
 
     /**
      * This method gets playlist name
+     *
      * @return playlist
      */
     public String getPlayList() {
@@ -24,6 +25,7 @@ public class CategorySong {
 
     /**
      * This method gets image resource id
+     *
      * @return image resource id
      */
     public int getImageResId() {

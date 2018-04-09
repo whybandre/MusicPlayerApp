@@ -2,7 +2,6 @@ package com.example.android.musicplayerapp;
 
 import android.app.Activity;
 import android.content.Context;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +28,7 @@ public class AllSongAdapter extends ArrayAdapter<AllSong> {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.song_item, parent, false);
         }

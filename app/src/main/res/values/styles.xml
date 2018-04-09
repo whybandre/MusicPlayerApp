@@ -14,7 +14,6 @@
     </style>
 
 
-
     <style name="TextSong">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/dimen_0dp</item>
@@ -96,7 +95,6 @@
         <item name="android:background">@android:color/white</item>
         <item name="android:layout_alignParentBottom">true</item>
     </style>
-
 
 
 </resources>

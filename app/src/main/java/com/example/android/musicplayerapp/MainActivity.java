@@ -2,10 +2,10 @@ package com.example.android.musicplayerapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements ListView.OnItemCl
          */
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView)
-                    findViewById(R.id.navigation);
+                findViewById(R.id.navigation);
 
         //To change color as we change activity
         Menu menu = bottomNavigationView.getMenu();
@@ -64,13 +64,11 @@ public class MainActivity extends AppCompatActivity implements ListView.OnItemCl
 //End---------->Bottom Navigation Bar with Activities<-------------
 
 
-
         // Create ArrayList of playlist categories - Material Design Icons
         ArrayList<CategorySong> categorySongs = new ArrayList<CategorySong>();
         categorySongs.add(new CategorySong(getString(R.string.library_category_musopen), R.drawable.ic_sunglasses_black_48dp));
         categorySongs.add(new CategorySong(getString(R.string.library_category_youtube), R.drawable.ic_youtube_black_48dp));
         categorySongs.add(new CategorySong(getString(R.string.library_category_bensound), R.drawable.ic_guitar_electric_black_48dp));
-
 
 
         //Set Background
@@ -89,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements ListView.OnItemCl
 
     /**
      * This method identifies ListView item clicked and launches CategorySongListActivity
+     *
      * @param adapterView
      * @param view
      * @param position

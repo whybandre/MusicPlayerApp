@@ -44,7 +44,6 @@ public class CategorySongListActivity extends AppCompatActivity implements ListV
         menuItem.setChecked(true);
 
 
-
         bottomNavigationView.setOnNavigationItemSelectedListener
                 (new BottomNavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -73,8 +72,6 @@ public class CategorySongListActivity extends AppCompatActivity implements ListV
                 });
 
 //End---------->Bottom Navigation Bar with Activities<-------------
-
-
 
 
         Bundle bundle = getIntent().getExtras();
@@ -124,7 +121,6 @@ public class CategorySongListActivity extends AppCompatActivity implements ListV
         listView.setBackgroundColor(getResources().getColor(R.color.home_background));
 
 
-
         // Create AllSongAdapter object to display listview
         AllSongAdapter adapter = new AllSongAdapter(this, allSongs);
         listView.setAdapter(adapter);
@@ -136,6 +132,7 @@ public class CategorySongListActivity extends AppCompatActivity implements ListV
 
     /**
      * Method to identify ListView item clicked and launch MediaPlayerActivity
+     *
      * @param adapterView
      * @param view
      * @param position

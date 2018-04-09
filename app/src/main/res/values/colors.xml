@@ -13,34 +13,33 @@
 
     <!-- Random Color for Home Button -->
 
-        <color name="pink">#AA1656</color>
-        <color name="red">#C62828</color>
-        <color name="orange">#E65100</color>
-        <color name="yellow">#F9A825</color>
-        <color name="green">#1B5E20</color>
-        <color name="spring_green">#2E7D32</color>
-        <color name="dark_cyan">#2D566B</color>
-        <color name="cyan">#227585</color>
-        <color name="dark_blue">#2D566B</color>
-        <color name="blue">#227585</color>
-        <color name="violet">#4527A0</color>
-        <color name="magenta">#861E6A</color>
+    <color name="pink">#AA1656</color>
+    <color name="red">#C62828</color>
+    <color name="orange">#E65100</color>
+    <color name="yellow">#F9A825</color>
+    <color name="green">#1B5E20</color>
+    <color name="spring_green">#2E7D32</color>
+    <color name="dark_cyan">#2D566B</color>
+    <color name="cyan">#227585</color>
+    <color name="dark_blue">#2D566B</color>
+    <color name="blue">#227585</color>
+    <color name="violet">#4527A0</color>
+    <color name="magenta">#861E6A</color>
 
-        <array name="androidcolors">
-            <item>@color/pink</item>
-            <item>@color/red</item>
-            <item>@color/orange</item>
-            <item>@color/yellow</item>
-            <item>@color/dark_cyan</item>
-            <item>@color/green</item>
-            <item>@color/spring_green</item>
-            <item>@color/cyan</item>
-            <item>@color/dark_blue</item>
-            <item>@color/blue</item>
-            <item>@color/violet</item>
-            <item>@color/magenta</item>
-        </array>
-
+    <array name="androidcolors">
+        <item>@color/pink</item>
+        <item>@color/red</item>
+        <item>@color/orange</item>
+        <item>@color/yellow</item>
+        <item>@color/dark_cyan</item>
+        <item>@color/green</item>
+        <item>@color/spring_green</item>
+        <item>@color/cyan</item>
+        <item>@color/dark_blue</item>
+        <item>@color/blue</item>
+        <item>@color/violet</item>
+        <item>@color/magenta</item>
+    </array>
 
 
 </resources>
