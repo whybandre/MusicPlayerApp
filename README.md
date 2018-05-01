@@ -17,6 +17,34 @@ The app’s structure is suitable for a music player app. A similarly structured
 
 ## **Screenshots Portrait Version**
 
+<img src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%201.png" 
+data-canonical-src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%201.png" 
+width="440" height="727" /> 
+<img src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%202.png" 
+data-canonical-src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%202.png" 
+width="440" height="727" /> 
+
+<img src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%203.png" 
+data-canonical-src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%203.png" 
+width="440" height="727" /> 
+<img src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%204.png" 
+data-canonical-src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%204.png" 
+width="440" height="727" /> 
+
+<img src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%205.png" 
+data-canonical-src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%205.png" 
+width="440" height="727" /> 
+<img src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%206.png" 
+data-canonical-src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%206.png" 
+width="440" height="727" /> 
+
+<img src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%207.png" 
+data-canonical-src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%207.png" 
+width="440" height="727" /> 
+<img src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%208.png" 
+data-canonical-src="https://github.com/whybandre/MusicPlayerApp/blob/master/Preview%20Music%20Player%20App%208.png" 
+width="440" height="727" /> 
+
 
 <h2>Installation</h2>
 
